@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEEKBASE INTERNSHIP TASK 1</title>
+ <h2>GEEKBASE INTERNSHIP TASK 1</h2>
+</head>
+<body>
+    <ol>
+        <li>History
+            <ol type="i">
+                <li>Background</li>
+                <li>Foundation</li>
+                <li>Expansion and termination</li>
+            </ol>
+        </li>
+        <li>Administration</li>
+        <li>Organization
+            <ol type="i">
+                <li>Tournament format</li>
+                <li>Player acquisition</li>
+                <li>Match rules</li>
+                <li>Prize money</li>
+            </ol>
+        </li>
+<li>Teams
+<ol type="i">
+ <li>current teams</li>
+                <li>Desfunct teams</li>
+                <li>Timeline</li>  </ol></li>
+<li>Tournament season and results
+<ol type="i">
+ <li>performance in the IPL  by title</li>
+                <li>IPL Season Results</li>
+                  </ol></li>
+<li> Teams Performance
+<ol type="i">
+ <li>League stage positions</li> </ol></li>
+<li>Awards
+<ol type="i">
+ <li>Orange Cap</li>
+                <li>Purple cap</li>
+                <li>Most valuable Player</li> 
+
+<li>Faimly Award</li> 
+<li>Emerging player Award</li> 
+<li>Most scores Award</li> 
+ </ol></li>
+<li>Financials
+            <ol type="i">
+ <li>title Sponsorships</li>
+                <li>Payment to foreign national boards</li>
+                <li>Brand value</li>  </ol></li>
+<li>Broadcasting 
+            <ol type="i">
+ <li>Sony and WSG(2008-2017)</li>
+                <li>Star India(2018-2022)</li>
+                <li>2023-2027</li> <li>International broadcasters</li> 
+ </ol></li>
+<li>Controversy
+            <ol type="i">
+ <li>2012 and 2013 IPL spot facing and betting match </li>
+                <li>Sponsorship</li>
+</ol></li>
+   
+   <li>See also</li>
+   <li>References</li>
+   <li>External Links</li>
+</body>
+</html>
