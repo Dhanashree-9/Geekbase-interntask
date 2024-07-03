@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin: 100px;
+        }
+        .profile-card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            padding: 25px;
+        }
+        .profile-card img {
+            border-radius: 80%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile-card h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .profile-card p {
+            color: #777;
+            font-size: 16px;
+        }
+        .profile-card .section {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .profile-card .section h3 {
+            font-size: 18px;
+            color: #0077b5;
+            margin-bottom: 10px;
+        }
+        .profile-card .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .profile-card .section li {
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+        }
+        .profile-card .contact {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .profile-card .contact a {
+            text-decoration: none;
+            color: #0077b5;
+            font-size: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .profile-card .contact a img {
+            width: 50px;
+height: 50px;
+            margin-right: 5px;
+        }
+        .profile-card .contact-button {
+            background: #0077b5;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .profile-card .contact-button:hover {
+            background: #005f86;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="my1.jpg" alt="Profile Photo">
+        <h2>Dhanashree Lomte</h2>
+        <p>Web Developer Intern </p>
+        
+        <div class="section">
+            <h3>Education</h3>
+            <ul>
+                <li>Bachelor of Engineeing in Computer Science</li>
+              
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li><li>  CSS</li>
+<li> JavaScript</li>
+                <li>React</li>
+      
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h3>Experience</h3>
+            <ul>
+                <li>web Developer Intern at Geekbase Technology </li>
+            </ul>
+        </div>
+        
+    <div class="contact">
+            <a href="https://www.linkedin.com/in/dhanashree-lomte-6bb969266/" target="_blank">
+                <img src="linkedIn.png" alt="LinkedIn">LinkedIn
+            </a>
+            <a href="https://github.com/Dhanashree-9" target="_blank">
+                <img src="github.png" alt="GitHub">GitHub
+            </a>
+        </div>
+        
+        <button class="contact-button" onclick="alert('Contact Me')">Contact Me</button>
+    </div>
+</body>
+</html>
