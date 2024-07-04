@@ -1,0 +1,208 @@
+
+    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+ 
+   
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+<script type="text/javascript" src="project1.js">
+</script>
+   </head>
+
+<body>
+  <div class="container">
+    <div class="topic">Portfolio</div>
+    <div class="content">
+      
+      <input type="radio" name="slider" checked id="home">
+      <input type="radio" name="slider" id="blog">
+      <input type="radio" name="slider" id="help">
+      <input type="radio" name="slider" id="code">
+      <input type="radio" name="slider" id="about">
+  
+      <div class="list">
+        <label for="home" class="home">
+        <i class="fas fa-home"></i>
+        <span class="title"> Home</span>
+      </label>
+      <label for="about" class="about">
+        <span class="icon"><i class="far fa-user"></i></span>
+        <span class="title"> About</span>
+      </label>
+      <label for="blog" class="blog">
+        <span class="icon"><i class="fas fa-award"></i></span>
+        <span class="title"> Skills</span>
+      </label>
+      <label for="help" class="help">
+        <span class="icon"><i class="far fa-envelope"></i></span>
+        <span class="title"> Contact</span>
+      </label>
+      <label for="code" class="code">
+        <span class="icon"><i class="fas fa-file"></i></span>
+        <span class="title"> Resume</span>
+      </label>
+   
+      <div class="slider"></div>
+    </div>
+      <div class="text-content">
+        <div class="home text">
+          <div class="title">Home:</div>
+       
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src=my1.jpg alt="Avatar" style="width:100%">
+                <div class="containername">
+                  <h4><b>Dhanashree Lomte</b></h4> 
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <h2>Details:</h2><br>
+              <p>Dob : 27 oct 2003</p>            
+              <p>Email : dhanshreelomte@gmail.com</p>
+              <p>Contact No : 9322571995</p>
+            </div>
+          </div>
+        </div>
+        <div class="about text">
+            <div class="title">About:</div>
+          
+            <p>Education : Currently Persuing BE in CSE</p>
+            <p>Experience : web development intern at Geekbase Technology</p>
+<p>Projects:  Food Delivery Website using HTML CSS and JavaScript<br>
+                    </p>
+
+      
+      
+          </div>
+        <div class="blog text">
+          <div class="title">My skills:</div>
+
+            <p>HTML</p>
+            <div class="skillcontainer">
+              <div class="skills html"></div>
+            </div>
+            
+            <p>CSS</p>
+            <div class="skillcontainer">
+              <div class="skills css"></div>
+            </div>
+            
+            <p>JavaScript</p>
+            <div class="skillcontainer">
+              <div class="skills js"></div>
+            </div>
+            
+            <p>PHP</p>
+            <div class="skillcontainer">
+              <div class="skills php">
+                  </div>
+            </div>
+
+<p>JAVA</p>
+            <div class="skillcontainer">
+              <div class="skills java">
+                  </div>
+            </div>
+        </div>
+        <div class="help text">
+          <div class="title">Contact:</div>
+          <!--<p>here Contact Form</p>-->
+          <form action="" method="POST">
+          	<div class="input-box">
+          		<textarea placeholder="Email id" id="email" onkeyup='validateEmail()'></textarea>
+          		<span class='error-message' id='email-error'></span>
+            </div>
+            <div class="input-box">
+          		<textarea placeholder="Subject" id="subject" onkeyup='validateSubject()'></textarea>
+          		<span class='error-message' id='subject-error'></span>
+            </div>
+            <div class="input-box message-box">
+          		<textarea rows="6" placeholder="Message" id="message" onkeyup='validateMessage()'></textarea>
+          		<span class='error-message' id='message-error'></span>
+            </div>
+          </form>
+            <button class="btn-grad" onclick='return validateForm()'>Submit</button>
+            <span class='error-message' id='submit-error'></span>
+        </div>
+        <div class="code text">
+          <div class="title">Resume:</div>
+         <p>Click the button below to download my resume</p>
+      <a href="file:///C:/Users/user/Desktop/MYRESUME.pdf" target="_blank">
+        <button class="btn-grad">Download Resume</button>
+      </a>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+
+              
+function validateEmail () {
+  var email = document.getElementById('email').value;
+  if(email.length == 0) {
+    producePrompt('Email Invalid','email-error', 'red');
+    return false;
+}
+if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+    producePrompt('Email Invalid', 'email-error', 'red');
+    return false;
+}
+producePrompt('Valid', 'email-error', '#4776E6');
+return true;
+}
+function validateSubject() {
+  var subject = document.getElementById('subject').value;
+  var required = 5;
+  var need = required - subject.length;
+  if (need > 0) {
+    producePrompt(need + ' more characters required','subject-error','red');
+    return false;
+}
+producePrompt('Valid', 'subject-error', '#4776E6');
+return true;
+}
+function validateMessage() {
+  var message = document.getElementById('message').value;
+  var required = 15;
+  var left = required - message.length;
+  if (left > 0) {
+    producePrompt(left + ' more characters required','message-error','red');
+    return false;
+}
+producePrompt('Valid', 'message-error', '#4776E6');
+return true;
+}
+function validateForm() {
+  if ( !validateEmail() || !validateSubject() || !validateMessage()) {
+    jsShow('submit-error');
+    producePrompt('Please fill.', 'submit-error', 'red');
+    setTimeout(function(){jsHide('submit-error');}, 2000);
+    return false;
+}
+else {
+    window.open('mailto:example@gmail.com');
+}
+}
+function jsShow(id) {
+  document.getElementById(id).style.display = 'block';
+}
+function jsHide(id) {
+  document.getElementById(id).style.display = 'none';
+}
+function producePrompt(message, promptLocation, color) {
+  document.getElementById(promptLocation).innerHTML = message;
+  document.getElementById(promptLocation).style.color = color;
+}
+
+            
+    
+</script>
+</html>
